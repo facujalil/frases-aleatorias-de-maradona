@@ -124,13 +124,15 @@ const positionList = [];
 let randomPosition = Math.floor(Math.random() * (24 - 0 + 1) + 0);
 
 window.addEventListener("load", () => {
-  img.style.width = "12rem";
-  img.style.height = "12rem";
+  img.style.width = "100%";
+  img.style.height = "100%";
   positionList.push(randomPosition);
   showQuote();
 });
 
 newQuoteButton.addEventListener("click", () => {
+  img.src = "";
+  img.alt = "";
   getPosition();
   showQuote();
 });
