@@ -131,9 +131,8 @@ window.addEventListener("load", () => {
 });
 
 newQuoteButton.addEventListener("click", () => {
-  img.src = "";
-  img.alt = "";
   getPosition();
+  resetImage();
   showQuote();
 });
 
@@ -153,6 +152,11 @@ const getPosition = () => {
     positionList.splice(0, positionList.length);
     getPosition();
   }
+};
+
+const resetImage = () => {
+  img.src = "";
+  img.alt = "";
 };
 
 const showQuote = () => {
