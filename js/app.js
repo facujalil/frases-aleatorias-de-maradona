@@ -116,9 +116,9 @@ const quoteList = [
   },
 ];
 
-let img = document.querySelector("img");
-let quote = document.querySelector(".quote");
-let newQuoteButton = document.querySelector(".new-quote-button");
+const img = document.querySelector("img");
+const quote = document.querySelector(".quote");
+const newQuoteButton = document.querySelector(".new-quote-button");
 
 const positionList = [];
 let randomPosition = Math.floor(Math.random() * (24 - 0 + 1) + 0);
@@ -137,7 +137,7 @@ newQuoteButton.addEventListener("click", () => {
 });
 
 const getPosition = () => {
-  let newRandomPosition = Math.floor(Math.random() * (24 - 0 + 1) + 0);
+  const newRandomPosition = Math.floor(Math.random() * (24 - 0 + 1) + 0);
 
   if (
     (positionList.length < quoteList.length &&
