@@ -132,7 +132,6 @@ window.addEventListener("load", () => {
 
 newQuoteButton.addEventListener("click", () => {
   getPosition();
-  resetImage();
   showQuote();
 });
 
@@ -152,11 +151,6 @@ const getPosition = () => {
     positionList.splice(0, positionList.length);
     getPosition();
   }
-};
-
-const resetImage = () => {
-  img.src = "";
-  img.alt = "";
 };
 
 const showQuote = () => {
